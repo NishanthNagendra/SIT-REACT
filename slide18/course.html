@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example for Beginners</title>
+</head>
+<body>
+    <h1>JavaScript Example for Beginners</h1>
+    <button onclick="myFunction()">Click Me</button>
+
+    <script>
+        // Variables
+        var x = 5; // var is function-scoped
+        let y = 10; // let is block-scoped
+        const z = 15; // const is block-scoped and cannot be reassigned
+
+        // Function
+        function myFunction() {
+            // This code will run when the function is called
+            alert("Hello, World!"); // Display an alert box with the message "Hello, World!"
+
+            // Numbers
+            let num1 = 42; // An integer number
+            let num2 = 3.14; // A floating-point number
+
+            // Use case: Adding two numbers
+            let sum = num1 + num2; // sum will be 45.14
+            console.log("Sum:", sum); // Output: Sum: 45.14
+
+            // Strings
+            let str1 = "Hello"; // A string with double quotes
+            let str2 = 'World'; // A string with single quotes
+
+            // Use case: Concatenating (joining) two strings
+            let greeting = str1 + " " + str2; // greeting will be "Hello World"
+            console.log("Greeting:", greeting); // Output: Greeting: Hello World
+
+            // Booleans
+            let isTrue = true; // A boolean value true
+            let isFalse = false; // A boolean value false
+
+            // Use case: Checking a condition
+            if (isTrue) {
+                console.log("This is true!"); // This will be printed
+            } else {
+                console.log("This is false!");
+            }
+
+            // Arrays
+            let array = [1, 2, 3, 4, 5]; // An array of numbers
+
+            // Use case: Accessing elements in an array
+            console.log("First element:", array[0]); // Output: First element: 1
+            console.log("Second element:", array[1]); // Output: Second element: 2
+
+            // Objects
+            let person = {
+                firstName: "John", // Key: firstName, Value: "John"
+                lastName: "Doe", // Key: lastName, Value: "Doe"
+                age: 30 // Key: age, Value: 30
+            };
+
+            // Use case: Accessing properties of an object
+            console.log("First Name:", person.firstName); // Output: First Name: John
+            console.log("Last Name:", person.lastName); // Output: Last Name: Doe
+            console.log("Age:", person.age); // Output: Age: 30
+        }
+    </script>
+</body>
+</html>
+
